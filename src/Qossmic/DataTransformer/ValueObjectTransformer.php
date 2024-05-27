@@ -90,7 +90,7 @@ final class ValueObjectTransformer implements DataTransformerInterface
         }
     }
 
-    private function getPropertyValue(FormBuilderInterface $form, object $object): bool|int|string|null
+    private function getPropertyValue(FormBuilderInterface $form, object $object)
     {
         if (null !== $form->getPropertyPath()) {
             /* @phpstan-ignore-next-line */
